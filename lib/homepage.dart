@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_signup/loginsignup.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -38,37 +39,7 @@ class _HomePageState extends State<HomePage> {
               image: AssetImage('assets/img1.png'),
               height: 300,
             ),
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Column(
-                children: [
-                  TextFormField(
-                    decoration: const InputDecoration(
-                      border: UnderlineInputBorder(),
-                      icon: Icon(Icons.account_circle_sharp),
-                      labelText: 'Enter your username / Email',
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  TextFormField(
-                    decoration: const InputDecoration(
-                      border: UnderlineInputBorder(),
-                      icon: Icon(Icons.password),
-                      labelText: 'Enter your password',
-                    ),
-                  ),
-                  SizedBox(height: 15),
-                  Container(
-                    height: 50,
-                    child: ElevatedButton(
-                        onPressed: () {
-                          print('Button presses !');
-                        },
-                        child: Text('Submit')),
-                  )
-                ],
-              ),
-            ),
+            Loginsignup(),
           ],
         ),
       ),
