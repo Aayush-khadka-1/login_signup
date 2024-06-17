@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_signup/loginicons.dart';
 import 'package:login_signup/loginsignup.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,12 +35,17 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 40),
             Image(
               image: AssetImage('assets/img1.png'),
               height: 300,
             ),
+            SizedBox(
+              height: 20,
+            ),
             Loginsignup(),
+            SizedBox(height: 10),
+            Loginicons(),
           ],
         ),
       ),
