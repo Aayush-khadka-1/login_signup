@@ -16,19 +16,28 @@ class _LoginiconsState extends State<Loginicons> {
           children: [
             Icon(Icons.facebook_rounded, size: 40, color: Colors.blue),
             SizedBox(width: 20),
-            Icon(Icons.apple, size: 45, color: Colors.black,),
+            Icon(
+              Icons.apple,
+              size: 45,
+              color: Colors.black,
+            ),
             SizedBox(width: 20),
-            Icon(Icons.email, size: 40, color: Colors.green, )
+            Icon(
+              Icons.email,
+              size: 40,
+              color: Colors.green,
+            )
           ],
         ),
         SizedBox(height: 10),
         Text(
-            'Login via',
-        style: TextStyle(
-          fontSize: 25,
-          color: Colors.black,
-          fontWeight: FontWeight.w600,
-        ),),
+          'Login via',
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.black,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
       ],
     );
   }
